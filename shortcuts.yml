@@ -1,0 +1,37 @@
+# shortcuts
+---
+
+# 🐛 including vars doesn't work in v0.4.2
+# - include: .global-vars
+- vars:
+    defaults_domain: com.bohemiancoding.sketch3
+    ctrl: "^"
+    opt: "~"
+    cmd: "@"
+    shift: "\$"
+
+# View
+# ----
+- name: Show Rulers
+  defaults:
+    action: write
+    domain: "{{ defaults_domain }}"
+    key: NSUserKeyEquivalents
+    value: -dict-add "Show Rulers" "{{cmd}}R"
+
+- name: Show Smart Guides
+  defaults:
+    action: write
+    domain: "{{ defaults_domain }}"
+    key: NSUserKeyEquivalents
+    value: -dict-add "Show Smart Guides" "{{cmd}};"
+
+# Debugging
+# ----------
+
+# # Display result, just for fun
+# - name: Shortcuts
+#   defaults:
+    #       action: read
+    #       domain: "{{ defaults_domain }}"
+    #       key: NSUserKeyEquivalents

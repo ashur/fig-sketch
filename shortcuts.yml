@@ -19,6 +19,13 @@
     key: NSUserKeyEquivalents
     value: -dict-add "Show Rulers" "{{cmd}}R"
 
+- name: Show All Guides
+  defaults:
+    action: write
+    domain: "{{ defaults_domain }}"
+    key: NSUserKeyEquivalents
+    value: -dict-add "Show All Guides" "{{cmd}};"
+
 - name: Show Smart Guides
   defaults:
     action: write

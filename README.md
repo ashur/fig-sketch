@@ -8,7 +8,7 @@ A [Fig][fig] repository for Sketch
 1. Add this repository as a Fig app:
 
 ~~~
-$ fig add bootstrap --url=https://github.com/ashur/fig-sketch.git
+$ fig add sketch --url=https://github.com/ashur/fig-sketch.git
 ~~~
 
 [fig]: https://github.com/ashur/fig
